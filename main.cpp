@@ -10,22 +10,12 @@ using namespace std;
 int main() {
 
 
+    BlackJack play;
+    char choice;
 
+    cout << "Welcome to the blackjack player." << endl << "To begin or play again when a hand is done press 'a'" << endl << "Or press 'l' to leave." << endl;
 
-    return 0;
-}
-
-
-
-
-
-
-/*BlackJack play;
-char choice;
-
-cout << "Welcome to the blackjack player." << endl << "To begin or play again when a hand is done press 'a'" << endl << "Or press 'l' to leave." << endl;
-
-while (true){
+    while (true){
 
     cout <<  "Would you like to play?" << endl;
     cin >> choice;
@@ -37,4 +27,15 @@ while (true){
     if (choice == 'l'){
         break;
     }
-} */
+    }
+
+
+    return 0;
+}
+
+
+
+
+
+
+
