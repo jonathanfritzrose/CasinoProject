@@ -15,9 +15,13 @@ class Card {
     public:
         Card(Suit suit_value,Face face_value);
         string print();
+        int bj_face_val();
+        int get_suit_val();
+        //display card function
     private:
         Suit suit_value;
         Face face_value;
+
 
 };
 

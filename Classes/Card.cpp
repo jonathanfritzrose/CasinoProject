@@ -37,5 +37,39 @@ string get_face(Face card_value){
     }
 }
 string Card::print() {
-    return get_suit(suit_value) + " " + get_face(face_value);
+    return get_face(face_value) + " of " + get_suit(suit_value);
+}
+
+int Card::bj_face_val() {
+
+    switch (face_value) {
+
+        case One: return 1;
+        case Two: return 2;
+        case Three: return 3;
+        case Four: return 4;
+        case Five: return 5;
+        case Six:  return 6;
+        case Seven: return 7;
+        case Eight: return 8;
+        case Nine: return 9;
+        case Ten: return 10;
+        case Jack: return 10;
+        case Queen: return 10;
+        case King: return 10;
+        case Ace:  return 11;
+
+    }
+
+}
+
+int Card::get_suit_val() {
+
+    switch (suit_value) {
+        case Clubs : return 0;
+        case Hearts : return 1;
+        case Spades : return 2;
+        case Diamonds : return 3;
+    }
+
 }
